@@ -5,6 +5,7 @@ module.exports = {
     entry: {
         index: './src/index.js',
         layout: './src/layout.js',
+        dialog: './src/dialog.js'
     },
     output: {
         filename: '[name].bundle.js',
