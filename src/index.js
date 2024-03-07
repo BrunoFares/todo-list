@@ -7,19 +7,19 @@ renderLayout();
 const btn = document.querySelector('div#addItem');
 
 btn.addEventListener('mouseover', function() {
-    btn.style.backgroundColor = "rgb(100, 100, 100)";
+    btn.style.backgroundColor = "rgb(100, 40, 40)";
 })
 
 btn.addEventListener('mouseout', function() {
-    btn.style.backgroundColor = "rgb(78, 78, 78)";
+    btn.style.backgroundColor = "rgb(79, 40, 40)";
 })
 
 btn.addEventListener('mousedown', function() {
-    btn.style.backgroundColor = "rgb(120, 120, 120)";
+    btn.style.backgroundColor = "rgb(120, 40, 40)";
 })
 
 btn.addEventListener('mouseup', function() {
-    btn.style.backgroundColor = "rgb(100, 100, 100)";
+    btn.style.backgroundColor = "rgb(100, 40, 40)";
 })
 
 btn.addEventListener('click', () => { generateDialog(); });

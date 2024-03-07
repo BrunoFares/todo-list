@@ -13,6 +13,7 @@ body {
     font-family: 'San Francisco';
     color: white;
     background-color: rgb(51, 51, 51);
+    font-size: 1.3em;
 }
 
 div {
@@ -26,7 +27,7 @@ h1, h2#titleHead, h3#titleSide, div#addItem {
 
 div#addItem {
     text-align: center;
-    background-color: rgb(78, 78, 78);
+    background-color: rgb(79, 40, 40);
     padding: 0.5rem;
     border-radius: 8px;
 }
@@ -53,4 +54,31 @@ div.pitch {
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     background-color: rgb(65, 65, 65);
+}
+
+dialog {
+    border: 0;
+    border-radius: 0.5em;
+    background-color: rgb(79, 40, 40);
+    color: white;
+}
+
+dialog button {
+    font-size: 1em;
+    background-color: rgb(61, 32, 32);
+    color: white;
+    padding: 0.4em 1em;
+    border: 0;
+    border-radius: 0.5em;
+    margin-left: auto;
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form button {
+    flex: 0;
 }
