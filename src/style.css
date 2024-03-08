@@ -21,15 +21,18 @@ div {
     margin: 0.3em;
 }
 
-h1, h2#titleHead, h3#titleSide, div#addItem {
+h1, h2#titleHead, h3#titleSide, button#addItem {
     margin: 1em;
 }
 
-div#addItem {
+button#addItem {
     text-align: center;
     background-color: rgb(79, 40, 40);
     padding: 0.5rem;
     border-radius: 8px;
+    border: 0;
+    color: white;
+    font-size: 0.9em;
 }
 
 h3#titleSide {
@@ -48,6 +51,8 @@ div.sidebar {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
     background-color: rgb(65, 65, 65);
+    display: flex;
+    flex-direction: column;
 }
 
 div.pitch {
@@ -79,6 +84,26 @@ form {
     flex-direction: column;
 }
 
+form input, form label, form button {
+    margin: 5px;
+}
+
+form input {
+    border: 0;
+    background-color: rgb(61, 32, 32);
+    border-radius: 10px;
+    color: white;
+    font-size: 0.9em;
+    padding: 0.5em;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: 0;
+}
+
 form button {
     flex: 0;
+    margin-left: auto;
 }

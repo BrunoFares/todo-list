@@ -4,22 +4,32 @@ import './style.css';
 
 renderLayout();
 
-const btn = document.querySelector('div#addItem');
+const btnAddItem = document.querySelector('button#addItem');
 
-btn.addEventListener('mouseover', function() {
-    btn.style.backgroundColor = "rgb(100, 40, 40)";
-})
+btnAddItem.addEventListener('click', () => { generateDialog(); });
 
-btn.addEventListener('mouseout', function() {
-    btn.style.backgroundColor = "rgb(79, 40, 40)";
-})
+const btn = document.querySelectorAll('button');
 
-btn.addEventListener('mousedown', function() {
-    btn.style.backgroundColor = "rgb(120, 40, 40)";
-})
+btn.forEach(item => {
+    item.addEventListener('mouseover', function() {
+        item.style.backgroundColor = "rgb(100, 40, 40)";
+    })
+});
 
-btn.addEventListener('mouseup', function() {
-    btn.style.backgroundColor = "rgb(100, 40, 40)";
-})
+btn.forEach(item => {
+    item.addEventListener('mouseout', function() {
+        item.style.backgroundColor = "rgb(79, 40, 40)";
+    })
+});
 
-btn.addEventListener('click', () => { generateDialog(); });
+btn.forEach(item => {
+    item.addEventListener('mousedown', function() {
+        item.style.backgroundColor = "rgb(120, 40, 40)";
+    })
+});
+
+btn.forEach(item => {
+    item.addEventListener('mouseup', function() {
+        item.style.backgroundColor = "rgb(100, 40, 40)";
+    })
+});

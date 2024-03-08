@@ -15,11 +15,11 @@ div2.classList.add('sidebar');
 const h3 = document.createElement('h3');
 h3.innerHTML = 'My Lists';
 h3.id = 'titleSide';
-const newListDiv = document.createElement('div');
-newListDiv.innerHTML = 'Add new list';
-newListDiv.id = 'addItem';
+const newListBtn = document.createElement('button');
+newListBtn.innerHTML = 'Add new list';
+newListBtn.id = 'addItem';
 div2.appendChild(h3);
-div2.appendChild(newListDiv);
+div2.appendChild(newListBtn);
 
 const div3 = document.createElement('div');
 div3.classList.add('pitch');

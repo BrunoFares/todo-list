@@ -1,6 +1,7 @@
 const dialog = document.createElement('dialog');
 const form = document.createElement('form');
 form.action = 'GET';
+const fieldset = document.createElement('fieldset');
 
 const label = document.createElement('label');
 label.htmlFor = 'listTitle';
@@ -23,8 +24,9 @@ close.innerHTML = '×';
 form.appendChild(label);
 form.appendChild(input);
 form.appendChild(submit);
+fieldset.appendChild(form);
 dialog.appendChild(close);
-dialog.appendChild(form);
+dialog.appendChild(fieldset);
 
 function generateDialog() {
     document.body.appendChild(dialog);
@@ -35,5 +37,10 @@ close.addEventListener('click', event => {
     event.preventDefault();
     dialog.close();
 });
+
+submit.addEventListener('click', event => {
+    event.preventDefault();
+    dialog.close();
+})
 
 export { generateDialog };
