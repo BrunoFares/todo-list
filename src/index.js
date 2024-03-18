@@ -8,28 +8,20 @@ const btnAddItem = document.querySelector('button#addItem');
 
 btnAddItem.addEventListener('click', () => { generateDialog(); });
 
-const btn = document.querySelectorAll('button');
+const btn = document.querySelector('button');
 
-btn.forEach(item => {
-    item.addEventListener('mouseover', function() {
-        item.style.backgroundColor = "rgb(100, 40, 40)";
-    })
+btn.addEventListener('mouseover', function () {
+    btn.style.backgroundColor = "rgb(100, 40, 40)";
 });
 
-btn.forEach(item => {
-    item.addEventListener('mouseout', function() {
-        item.style.backgroundColor = "rgb(79, 40, 40)";
-    })
+btn.addEventListener('mouseout', function () {
+    btn.style.backgroundColor = "rgb(79, 40, 40)";
 });
 
-btn.forEach(item => {
-    item.addEventListener('mousedown', function() {
-        item.style.backgroundColor = "rgb(120, 40, 40)";
-    })
+btn.addEventListener('mousedown', function () {
+    btn.style.backgroundColor = "rgb(120, 40, 40)";
 });
 
-btn.forEach(item => {
-    item.addEventListener('mouseup', function() {
-        item.style.backgroundColor = "rgb(100, 40, 40)";
-    })
+btn.addEventListener('mouseup', function () {
+    btn.style.backgroundColor = "rgb(100, 40, 40)";
 });
